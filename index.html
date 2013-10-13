@@ -6,6 +6,11 @@
   <!-- Bootstrap -->
 
   <link href="css/amelia/bootstrap.min.css" rel="stylesheet" media="screen">
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
   <h1>Find your experience!</h1>
@@ -19,6 +24,8 @@
 
   <br>
   <h3>Basics:</h3>
+  <a data-toggle="modal" style="background-color:lightgreen" href="#salmon_modal" class="btn btn-default">Salmon</a>
+
   <button type="button" style="background-color:lightgreen" class="btn btn-default">Salmon</button>
   <button type="button" style="background-color:lightgreen" class="btn btn-default">Meatballs</button>
   <button type="button" style="background-color:lightgreen" class="btn btn-default">Glogg</button>
@@ -29,7 +36,7 @@
   <br>
 
   <h3>Recipes:</h3>
-  <button type="button" style="background-color:pink" class="btn btn-default">Sous-vide salmon with apple</button>
+  <a data-toggle="modal" style="background-color:pink" href="#sous_vide_modal" class="btn btn-default">Sous-vide salmon with apple</a>
   <button type="button" style="background-color:pink" class="btn btn-default">Hot chocolate with saffron cream</button>
   <button type="button" style="background-color:pink" class="btn btn-default">Salty cheese cake</button>
   <br>
@@ -39,15 +46,46 @@
   <button type="button" style="background-color:orange" class="btn btn-default">Hotel Ohla</button>
   <button type="button" style="background-color:orange" class="btn btn-default">Ikea</button>
 
+  <!-- Modal -->
+  <div class="modal fade" id="salmon_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Salmon</h4>
+        </div>
+        <div class="modal-body">
+          <img border="0" src="images/Salmo_salar_(crop).jpg" width="304">
+          <a href="http://en.wikipedia.org/wiki/Salmon"> Salmon</a> is the common name for several species of fish in the family Salmonidae. Other fish in the same family are called trout. The difference between salmon and trout is sometimes said to be that salmon migrate and trout are resident, and that salmon spawn once and trout spawn many times...
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="sous_vide_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Sous-vide salmon with apple</h4>
+        </div>
+        <div class="modal-body">
+          <img border="0" src="images/recipe_1.jpg" width="304">
+          <a href="http://www.newscancook.com/recipes-by-chef/sous-vide-salmon-with-apple/"> INGREDIENTS</a> 
+          <ul>
+            <li>Four 7 oz. (200 g) pieces of salmon fillet</li>
+            <li>4 bay leaves</li>
+            <li>Salt</li>
+            <li>1 green apple</li>
+            <li>1 tbs. honey</li>
+            <li>4 carrots</li>
+            <li>1-2 tbs. butter...</li>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
 
-
-
-
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="//code.jquery.com/jquery.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-</body>
-</html>
+  </body>
+  </html>
